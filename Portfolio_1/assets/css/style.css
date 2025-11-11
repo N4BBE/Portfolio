@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Google Sans Code', sans-serif;
+}
+
+body {
+    font-family: 'Google Sans Code', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 20px;
+}
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    z-index: 1000;
+}
+/* Glassmorphism effect */
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.125);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+/* Navigation links */
+.nav-links a {
+    margin: 0 28px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: lighter;
+    transition: color 0.3s ease;
+}
+/* Hover effect for hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 18px;
+    height: 15px;
+    cursor: pointer;
+}
+/* Hamburger bars */
+.hamburger .bar {
+    margin-left: -9px;
+    height: 1px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+/* Active state for hamburger menu */
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.scrollable-ccontainer {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
+}
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    padding: 20px;
+
+}
+.text-left, .text-right {
+    flex: 1;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 400px;
+}
+/* .a-content {
+    width: 300px;
+    padding: 0;
+    margin: 0;
+} */
+.profile-pic img {
+    width: 370px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 46%;
+    transition: all 0.3s ease;
+    /* display: block;
+    width: 370px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 46%;
+    flex: 1;
+    text-align: center;
+    margin: 20px 50px; */
+}
+
+#myName {
+    margin: 50px 0 10px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+.my-info {
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0 0 50px 0;
+    font-size: 15px;
+    position: relative;
+    padding: 10px 10px;
+    gap: 50px;
+}
+
+#skills {
+    display: inline-block;
+    gap: 40px;
+    width: 100%;
+    padding: 20px;
+}
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 5px;
+    gap: 50px;
+}
+
+.skill-cards {
+    display: flex;
+    background: rgba(255, 255, 255, 0.125);
+    backdrop-filter: blur(10px);
+    width: 100px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.cname {
+    width: 100%;
+    height: 50%;
+    background: rgba(255, 255, 255, 0.421);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    padding-top: 10px;
+    color: black;
+}
+.skill-cards:hover .cname {
+    bottom: 0;
+    transition: bottom 0.3s ease;
+
+}
+
+.skill-cards img {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    object-fit: contain;
+}
+
+/* Breakpoints */
+@media (max-width: 520px) {
+    .navbar {
+        padding: 10px 5px;
+    }
+    .nav-links a {
+        margin: 0 18px;
+        font-size: 14px;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .profile-pic {
+        order: 1;
+        margin-top: 0;
+    }
+    .text-left {
+        order: 2;
+        margin-top: 20px;
+    }
+    .text-right {
+        order: 3;
+        margin-top: 20px;
+    }
+    .profile-pic img {
+        width: 220px;
+        height: 250px;
+        margin: 20px 0;
+    }
+    .text-left, .text-right {
+        width: 90%;
+        max-width: 300px;
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
+/* Small devices (phones, less than 434px) */
+@media (max-width: 434px) {
+    .navbar {
+        width: auto;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: transparent;
+        padding: 10px 4px 10px 21px;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 39px;
+        right: -44px;
+        background-color: rgba(255, 255, 255, 0.125);
+        backdrop-filter: blur(10px);
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links a {
+        margin: 10px 0;
+    }
+    #myName {
+        font-size: 26px;
+    }
+    .my-info {
+        font-size: 12px;
+        gap: 10px;
+    }
+}
