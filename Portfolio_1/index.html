@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="/Portfolio_1/assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
 <body>
     <header class="navbar">
@@ -17,80 +21,111 @@
             <span class="bar"></span>
         </div>
         <ul class="nav-links" id="nav-links">
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#about" class="nav-link">ABOUT</a></li>
+            <li><a href="#skills" class="nav-link">SKILLS</a></li>
+            <!-- <li><a href="#projects" class="nav-link">PROJECTS</a></li> -->
+            <li><a href="#contact" class="nav-link">CONTACT</a></li>
         </ul>
     </header>
 
 <!-- About Section -->
-<section id="about" style="margin-bottom: 40px;">
-  <div>
-    <h1 id="myName">Mohamed Nabeel</h1>
-    <ul class="my-info">
-        <li style="color: rgb(107, 199, 241);"><span style="color: #4169E1;">Age:</span> "<span style="color: white;">25 Years Old</span>"</li>
-        <li style="color: rgb(107, 199, 241);"><span style="color: #4169E1;">Gender:</span> "<span style="color: white;">Male</span>"</li>
-    </ul>
-  </div>
-  <div class="scrollable-ccontainer">
-    <section class="content">
+<section class="content" id="about" style="margin-bottom: 40px; border-bottom: 1px solid rgb(186, 26, 66);">
+    <div style="text-align: center;">
+        <h1 class="hero-name">MOHAMED NABEEL</h1>
+    </div>
+
+    <div class="about-container">
+
+        <!-- LEFT TEXT -->
         <div class="text-left">
-            <p style="color: burlywood;">&lt;description&gt;</p>
-            <P class="a-content" style="margin-left: 20px;">Hi! Im a beginner web developer with a strong passion for learning and building things for the web. Im currently focused on improving my skills in HTML, CSS, and JavaScript, and I enjoy turning ideas into simple, clean, and functional websites.</P>
-            <p style="color: burlywood;">&lt;/description&gt;</p>
+            <h1 class="top-text" style="font-weight: 900;">Developer in Progress</h1>
+            <p class="bottom-text">I’m a developer in progress, constantly learning new skills, creating projects, and improving myself with every step.</p>
         </div>
 
-        <div class="profile-pic">
-            <img src="/Portfolio_1/assets/images/Profile.PNG" alt="Profile Picture" id="profile-picture" height="30%" width="30%">
+        <!-- PROFILE IMAGE -->
+        <div class="profile">
+            <img class="profile-pic" src="/Portfolio_1/assets/images/Profile.PNG" />
         </div>
 
-        <div class="text-right">
-            <p style="color: burlywood;">&lt;future_plans&gt;</p>
-            <p class="a-content" style="margin-left: 20px;">Im always eager to learn new technologies and grow as a developer. In the near future, I plan to explore networking and system configuration, expanding my technical knowledge beyond web development to better understand how everything connects behind the scenes.</p>
-             <p style="color: burlywood;">&lt;/future_plans&gt;</p>
+        <!-- RIGHT ICONS -->
+        <div class="Socials">
+            <a href="https://github.com/N4BBE" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:mohamedn4beel@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://instagram.com/n4b.be" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/mohamed.nabeel.779556" target="_blank"><i class="fab fa-facebook"></i></a>
         </div>
-    </section>
-   </div>
+
+    </div>
+</section>
+<section class="sections">
+    <h1>About Me</h1>
+    <div class="about-me-content">
+    <div class="about-me-textleft">
+        <h3>Hello! I'm Mohamed Nabeel </h3>
+        <p style="padding-left: 15px;">A passionate developer dedicated to continuous learning and growth in the tech world. I thrive on creating innovative projects and enhancing my skills with each endeavor. Join me on my journey as I explore new technologies and push the boundaries of what's possible.</p>
+    </div>  
+    <div class="about-me-textright">
+        <h3>My Vision for the Future</h3>
+        <p style="padding-left: 15px;">I’m working toward a future where I can create my own solutions, build my own platforms, and understand the full technology stack. I want to master development, infrastructure, and cybersecurity, and use those skills to create systems that actually help people. My future is about growth, discipline, and turning knowledge into something real.</p>
+    </div>
+    </div>
 </section>
 <!-- skill section -->
-<section id="skills">
+<section id="skills" class="sections">
     <h1>Skills</h1>
     <div class="skill-container">
         <span class="skill-cards"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" /><p class="cname">HTML5</p></span>
         <span class="skill-cards"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" /><p class="cname">CSS3</p></span>
         <span class="skill-cards"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /><p class="cname">JavaScript</p></span>
         <span class="skill-cards"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" /><p class="cname">Linux</p></span>
-        <span class="skill-cards"><img src="/Portfolio_1/assets/images/icons/react.svg" /><p class="cname">React</p></span>
-        <span class="skill-cards"><img src="/Portfolio_1/assets/images/icons/laravel.svg" /><p class="cname">Laravel</p></span>
-        <span class="skill-cards"><img src="/Portfolio_1/assets/images/icons/Vue.svg" /><p class="cname">Vue</p></span>
-        <span class="skill-cards"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-plain.svg" /><p class="cname">Angular</p></span>
-        <span class="skill-cards"><img src="/Portfolio_1/assets/images/icons/Git.png" /><p class="cname">Git</p></span>
-        <span class="skill-cards"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" /><p class="cname">Github</p></span>
-        <span class="skill-cards"><img src="/Portfolio_1/assets/images/icons/code.svg" /><p class="cname">-</p></span>
-        <span class="skill-cards"><img src="/Portfolio_1/assets/images/icons/code.svg" /><p class="cname">-</p></span>
-        <span class="skill-cards"><img src="/Portfolio_1/assets/images/icons/code.svg" /><p class="cname">-</p></span>
-        <span class="skill-cards"><img src="/Portfolio_1/assets/images/icons/code.svg" /><p class="cname">-</p></span>
-        <span class="skill-cards"><img src="/Portfolio_1/assets/images/icons/code.svg" /><p class="cname">-</p></span>
-        <span class="skill-cards"><img src="/Portfolio_1/assets/images/icons/code.svg" /><p class="cname">-</p></span>
-        <span class="skill-cards"><img src="/Portfolio_1/assets/images/icons/code.svg" /><p class="cname">-</p></span>
+        <span class="skill-cards"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" /><p class="cname">Git</p></span>
+        <span class="skill-cards"><img src="/Portfolio_1/assets/images/icons/github.png" /><p class="cname">GitHub</p></span>
     </div>
     <div class="skill-container"></div>
 </section>
 
-    <!-- <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1: A web application for task management.</li>
-            <li>Project 2: A personal blog platform.</li>
-            <li>Project 3: An e-commerce website.</li>
-        </ul>
-    </section>
+ <section class="contact" id="contact">
+  <h2 class="contact-title">Contact Me</h2>
+  <p class="contact-tagline">Reach out to me for questions, or just to say hello!</p>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at:</p>
-    </section> -->
+  <div class="contact-box">
+    <form class="contact-form">
+      <div class="input-group">
+        <input type="text" required>
+        <label>Your Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" required>
+        <label>Your Email</label>
+      </div>
+
+      <div class="input-group textarea">
+        <textarea required></textarea>
+        <label>Your Message</label>
+      </div>
+
+      <button type="submit" class="neon-btn">Send Message</button>
+    </form>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <h3 class="footer-logo">Designed by <span>Mohamed Nabeel</span></h3>
+    <p class="footer-tagline">Developer • Learner • Builder</p>
+
+    <div class="footer-socials">
+      <a href="https://github.com/N4BBE" target="_blank">GitHub</a>
+      <a href="mailto:mohamedn4beel@gmail.com" target="_blank">Email</a>
+      <a href="https://instagram.com/n4b.be" target="_blank">Instagram</a>
+      <a href="https://facebook.com/mohamed.nabeel.779556" target="_blank">Facebook</a>
+    </div>
+
+    <p class="footer-copy">© 2025 All rights reserved.</p>
+  </div>
+</footer>
+
     <script src="/Portfolio_1/assets/scripts/script.js"></script>
 </body>
 </html>

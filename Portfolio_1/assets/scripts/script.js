@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const originalText = word.textContent; // Store original text
         const originalColor = window.getComputedStyle(word).color; // Store original color
         word.addEventListener('mouseenter', () => {
-            word.textContent = '"' + originalText + '"'; // Add quotation marks
-            word.style.color = '#f2556fff'; // Change to highlight color
+           // word.textContent = '"' + originalText + '"'; // // Add quotation marks
+            word.style.color = 'rgb(186, 26, 66)'; // Change to highlight color
         });
         word.addEventListener('mouseleave', () => {
             word.textContent = originalText; // Revert to original text
