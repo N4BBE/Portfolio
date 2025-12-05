@@ -4,11 +4,15 @@
     padding: 0;
     font-family: 'Google Sans Code', sans-serif;
 }
+:root {
+    --primary-font-color: #00000;
+    --bg-color: #30382f;
+}
 
 body {
     font-family: 'Google Sans Code', sans-serif;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--bg-color);
+    color: var(--primary-font-color);
     line-height: 1.6;
     padding: 20px;
 }
